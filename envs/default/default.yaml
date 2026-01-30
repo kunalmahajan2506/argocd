@@ -1,5 +1,5 @@
 
-apiVersion: argoproj.io/vlalpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: default
@@ -14,7 +14,7 @@ spec:
       recurse: true
     path:  envs/default
     targetRevision: main
-    repoURL: https://github.com/kunalmahajan2506/argocd
+    repoURL: https://github.com/kunalmahajan2506/argocd.git
   syncPolicy:
     automated:
       prune: true
